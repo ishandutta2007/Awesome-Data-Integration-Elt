@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Filter for soft glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      fill: #ffffff;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #38bdf8;
+      letter-spacing: 1.5px;
+    }
+    .flow-line {
+      stroke-dasharray: 8 12;
+      animation: dash 25s linear infinite;
+    }
+    .pulse-node {
+      animation: pulse 3s ease-in-out infinite alternate;
+    }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -1000;
+      }
+    }
+    @keyframes pulse {
+      0% { r: 4px; opacity: 0.4; }
+      100% { r: 8px; opacity: 0.9; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Dynamic / Animated Background Pipelines & Circuit Graph -->
+  <g opacity="0.35">
+    <!-- Pipeline 1: Top Stream -->
+    <path class="flow-line" d="M 50 70 C 350 70, 450 140, 750 140 C 950 140, 1050 80, 1150 80" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <!-- Pipeline 2: Middle Wave -->
+    <path class="flow-line" d="M 50 180 C 250 180, 350 260, 650 260 C 850 260, 950 200, 1150 200" fill="none" stroke="#818cf8" stroke-width="2.5" />
+    <!-- Pipeline 3: Bottom Feed -->
+    <path class="flow-line" d="M 50 290 C 400 290, 500 220, 800 220 C 1000 220, 1050 300, 1150 300" fill="none" stroke="#c084fc" stroke-width="2" />
+
+    <!-- Interconnecting Bus Lines -->
+    <line x1="750" y1="140" x2="750" y2="280" stroke="#38bdf8" stroke-dasharray="4 6" stroke-width="1.5" />
+    <line x1="450" y1="90" x2="450" y2="230" stroke="#818cf8" stroke-dasharray="4 6" stroke-width="1.5" />
+    <line x1="950" y1="120" x2="950" y2="270" stroke="#c084fc" stroke-dasharray="4 6" stroke-width="1.5" />
+
+    <!-- Flow Dynamic Nodes -->
+    <circle class="pulse-node" cx="450" cy="140" r="6" fill="#38bdf8" />
+    <circle class="pulse-node" cx="750" cy="140" r="7" fill="#818cf8" />
+    <circle class="pulse-node" cx="650" cy="260" r="6" fill="#c084fc" />
+    <circle class="pulse-node" cx="950" cy="200" r="5" fill="#38bdf8" />
+    <circle class="pulse-node" cx="300" cy="180" r="5" fill="#818cf8" />
+    <circle class="pulse-node" cx="850" cy="260" r="7" fill="#c084fc" />
+  </g>
+
+  <!-- Glowing Aura behind text area -->
+  <ellipse cx="600" cy="180" rx="380" ry="110" fill="url(#glow-grad)" filter="url(#glow)" />
+
+  <!-- Foreground Content: Pill Tag -->
+  <g transform="translate(600, 68)">
+    <rect x="-140" y="-16" width="280" height="32" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="-118" cy="0" r="4" fill="#38bdf8" />
+    <text x="-104" y="5" class="badge-text">DATA INTEGRATION &amp; ELT</text>
+  </g>
+
+  <!-- Foreground Content: Header Title -->
+  <text x="600" y="165" text-anchor="middle" class="title">
+    Awesome Data Integration &amp; ELT
+  </text>
+
+  <!-- Foreground Content: Subtitle -->
+  <text x="600" y="215" text-anchor="middle" class="subtitle">
+    Curated Hub of Modern ELT Pipelines, SaaS Platforms &amp; Open-Source Frameworks
+  </text>
+
+  <!-- Feature Tags / Metric Pills in Foreground -->
+  <g transform="translate(600, 275)">
+    <!-- Pill 1: Connectors -->
+    <g transform="translate(-310, 0)">
+      <rect x="-85" y="-15" width="170" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="0" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">⚡ 700+ Connectors</text>
+    </g>
+
+    <!-- Pill 2: Open Source -->
+    <g transform="translate(-105, 0)">
+      <rect x="-85" y="-15" width="170" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="0" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">🔓 Open-Source First</text>
+    </g>
+
+    <!-- Pill 3: Real-time CDC -->
+    <g transform="translate(105, 0)">
+      <rect x="-85" y="-15" width="170" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="0" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">🔄 Real-time CDC &amp; ETL</text>
+    </g>
+
+    <!-- Pill 4: Code-First & GitOps -->
+    <g transform="translate(310, 0)">
+      <rect x="-85" y="-15" width="170" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="0" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">🛠 Declarative &amp; GitOps</text>
+    </g>
+  </g>
+</svg>
