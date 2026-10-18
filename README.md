@@ -30,71 +30,31 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global data integration market is estimated between **$14.3 billion and $21.5 billion in 2026**, growing at a CAGR of ~12–14% toward over $50 billion by the mid-2030s, fueled by enterprise migration to cloud data platforms and generative AI data preparation workloads. The sector is **moderately concentrated at the top but fragmented overall** rather than a winner-take-all market: hyperscalers (AWS, Google Cloud) and legacy giants (Informatica, Qlik) control large enterprise workloads, while modern ELT disruptors (Fivetran, Airbyte) and code-first open ecosystems capture fast-evolving multi-cloud pipelines where vendor lock-in is resisted.
 
 ## SaaS/Hosted Platforms
 
+| Product | Company Size (Valuation / Revenue) | Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Google Cloud Dataflow](https://cloud.google.com/dataflow)** | ~$4.2T Market Cap / ~$446B TTM Rev (Alphabet) | Pay-per-vCPU & memory ($0.056/vCPU-hr, $0.003557/GB-hr on US-Central1 batch); FlexRS offers up to 40% discount | **90-day free trial with $300 cloud credits** (capped at 8 concurrent worker vCPUs; no permanent Always-Free tier for Dataflow compute) | Fully managed stream and batch processing service based on Apache Beam. Auto-scaling worker infrastructure with Dataflow Shuffle and Streaming Engine. |
+| **[AWS Glue](https://aws.amazon.com/glue/)** | ~$2.8T Market Cap / ~$776B TTM Rev (Amazon) | $0.44 per DPU-hour (1 DPU = 4 vCPU, 16 GB RAM; 1-min min for Glue 2.0+); Catalog $1/100K objects and $1/1M requests | **Always-Free tier**: 1M free metadata objects stored & 1M free catalog requests/month in AWS Glue Data Catalog (DPU compute for ETL jobs has no free tier and is billed from min 1) | Serverless Spark-based data preparation and ETL service with automatic schema discovery via crawlers and central Data Catalog. |
+| **[Stitch (Talend)](https://www.stitchdata.com/)** | ~$10B Valuation / ~$1.5B ARR (Qlik) | Standard plan starts at **$100/month** (for 5M rows/month; scales to $1,500/mo for 100M rows and $3,000/mo for 1B rows) | **14-day free trial** with unlimited row replication and full connector access (plus 7-day initial grace period with unlimited rows for each new integration added) | Cloud-based ELT platform built on the Singer framework. Simple setup and broad connector catalog; now part of Qlik Talend Cloud. |
+| **[Informatica](https://www.informatica.com/)** | ~$7.6B Market Cap / ~$1.68B TTM Rev (NYSE: INFA) | IPU consumption starting custom quotes (typical enterprise contracts start at tens of thousands/year; premium connectors $25k–$100k/yr) | **Always-Free tier**: 25 Informatica Processing Units (IPUs)/month on Cloud Data Integration (deleted if unused for 30 consecutive days); plus a **30-day full platform free trial** | Enterprise-grade cloud data integration, data management, and governance platform (IDMC) designed for complex regulatory compliance. |
+| **[Fivetran](https://www.fivetran.com/)** | ~$5.6B Valuation / ~$300M+ ARR | Pay-as-you-go based on Monthly Active Rows (MAR) starting at **~$500/1M MAR**; minimum **$5/month per connection** (1–1M MAR); annual commits start at ~$12,000/yr | **Always-Free tier**: Up to **500,000 MAR/month**, 3,500 activation MAR, and 5,000 monthly transformation model runs (soft limit; upgraded/paused if exceeded 2 consecutive months) | Industry-standard managed ELT service offering 700+ automated pre-built connectors with automatic schema drift handling. |
+| **[Airbyte](https://airbyte.com/)** | ~$1.5B Valuation / ~$20M+ ARR | Standard plan starts at **$20/month** (includes 5 credits; $5/credit thereafter; API sources: 6 credits/1M rows, DB/files: 4 credits/GB); Plus starts at **$189/month** (40 credits) | **30-day free trial with 400 credits**; open-source self-hosted version (Airbyte OSS) is permanently free | Highly customizable integration platform with 700+ connectors, CDK for custom connectors, and hybrid/cloud deployment models. |
+| **[Matillion](https://www.matillion.com/)** | ~$1.5B Valuation / ~$75M–$100M ARR | Basic plans start at **$1,000–$3,000/month** based on Data Processing Units (DPU compute consumption model) | **14-day free trial with 500 platform credits** and unrestricted access across the Data Productivity Cloud | Cloud-native data transformation and integration platform focused on warehouse/lake pushdown transformations. |
+| **[Hevo Data](https://hevodata.com/)** | ~$100M–$250M Valuation / ~$30M–$47M ARR | Starter plan starts at **$299/month** ($265/mo billed annually) for up to 5M events/month; Professional starts at **$849/month** | **Always-Free tier**: Up to **1,000,000 events/month** (with limited connectors and 5 user seats); plus a **14-day full-feature free trial** | No-code automated data pipeline platform with 150+ source connectors, automated schema management, and built-in reverse ETL. |
+| **[Meltano](https://meltano.com/)** | Seed-stage ($12.4M raised) / GitLab spin-out | Meltano Cloud Starter plan pricing starts with custom quote based on compute hours (e.g. 200 compute-hr tier; pipelines charged by runtime not row volume) | **Open-source framework is 100% free indefinitely**; Meltano Cloud offers demo-based trial access upon request (typically 14 to 30 days upon sales consultation) | Developer-centric, GitOps-driven data integration framework built around Singer taps/targets and dbt pipelines-as-code orchestration. |
 
 
-- **[Fivetran](https://www.fivetran.com/)**  
-
-  **Fully managed ELT platform with 700+ pre-built connectors** . **Pricing**: **Monthly Active Rows (MAR)** model—costs scale with data volume, not compute time . **Free plan**: limited MAR and 5,000 monthly model runs for transformations . **Standard plan**: connections generating 1–1M MAR incur a **minimum $5 per connection** charge (effective January 2026) . **Business Critical** adds cloud region selection for data residency . **Note**: As of January 2026, **deletes and history-mode repeated updates count toward paid MAR**—a row synced multiple times in a month is only charged once, but a deleted row now consumes MAR where it previously did not . **The managed standard** for teams wanting zero-maintenance replication .
-
-
-
-- **[Airbyte](https://airbyte.com/)**  
-
-  **Open-source data integration platform with a managed cloud option** . **Cloud pricing**: **Standard** starts at **$20/month with 5 credits** ($5 per extra credit) . **Plus** starts at **$189/month for 40 credits**—recommended once you consume **40+ credits monthly**, adding SSO, 15-minute syncs, and a 24-hour support SLA . **Credit metering varies by source type**: API sources consume **6 credits per million rows**; databases and files consume **4 credits per gigabyte** . **Pro and Enterprise Flex** shift to **capacity-based pricing** via **Data Workers**—roughly **0.5 workers per running database sync** or **0.2 per API sync**, stabilizing costs during volume spikes . **Enterprise Flex** supports **in-boundary and hybrid deployment** for data sovereignty . **The most flexible connector ecosystem** with **700+ connectors** and a 30-day trial with 400 credits .
-
-
-
-- **[Stitch (Talend)](https://www.stitchdata.com/)**  
-
-  **Cloud-based ELT built on the Singer framework** . **Pricing**: **Standard** from **$100/month for 5–300 million rows** . **Advanced** at **$1,500/month** (billed annually) for **100 million rows** . **Premium** at **$3,000/month** (billed annually) for **1 billion rows** . **14-day free trial** available . **SOC 2 compliance on all plans**; HIPAA via BAA signing . **Limitations**: **no real-time replication**—sync frequencies range from minutes to hours . **Now part of Qlik Talend Cloud** .
-
-
-
-- **[Matillion](https://www.matillion.com/)**  
-
-  **Cloud-native ELT with strong transformation capabilities** . **Pricing**: **Data Processing Units (DPUs)** model—costs scale with compute consumed, not rows . **Typical basic plans**: **$1,000–$3,000+ per month** . **Multi-year agreements** typically unlock **15–25% discounts** . **Negotiation window**: **late January** (fiscal year end) and **quarter ends** offer the strongest leverage . **Best for**: organizations needing **robust transformation** alongside extraction—**Matillion vs Fivetran**: Fivetran focuses on replication with minimal transformation; Matillion offers more transformation depth .
-
-
-
-- **[Hevo Data](https://hevodata.com/)**  
-
-  **No-code ELT platform with 150+ connectors** . **Pricing**: **Free plan** with **1 million events/month** (limited connectors, 5 users) . **Starter** from **$299/month** (or **$265/month annual**) for **5 million events**, 10 users, 150+ connectors, and dbt integration . **Professional** from **$849/month** (or **$750/month annual**) for **20 million events**, unlimited users, and pipeline automation APIs . **Business Critical** adds streaming pipelines, RBAC, SSO, and VPC peering . **Each inserted, updated, or deleted record counts as one event** . **14-day free trial** available .
-
-
-
-- **[Meltano](https://meltano.com/)**  
-
-  **Declarative data integration and ELT framework** . **Cloud pricing**: **Compute-hour model**—costs scale with **pipeline runtime**, not data volume . **Starter** includes **200 compute hours/month**, 25 workspaces, unlimited users, and 600+ connectors . **Growth** at **2,000 compute hours** adds 100 workspaces and **8 hours/month of engineering support** . **Scale** at **5,000 compute hours** adds unlimited workspaces and **15 hours/month of engineering** . **Enterprise** is custom with custom connectors and SLAs . **Key claim**: **40–80% cheaper than row-based pricing** for high-frequency database or bulk connectors—**data volume has no direct cost impact**, so backfills don't trigger surprise invoices . **The code-first choice**—pipelines live in Git with CI/CD .
-
-
-
-- **[AWS Glue](https://aws.amazon.com/glue/)**  
-
-  **Fully managed serverless ETL service** . **Pricing**: **$0.44 per DPU-hour** (billed per second, 1-minute minimum for Glue 2.0+) . A DPU provides **4 vCPUs and 16 GB memory** . **Default allocation**: **10 DPUs** for Spark jobs, **2 DPUs** for streaming jobs . **Data Catalog**: **$1 per 100,000 objects** and **$1 per million requests** . **Crawler runtime**: billed per DPU-hour with a **10-minute minimum** per crawl . **DataBrew**: **$0.48 per 30-minute interactive session** and **$0.46 per node-hour** for cleaning jobs . **The AWS-native standard** for serverless Spark ETL .
-
-
-
-- **[Google Cloud Dataflow](https://cloud.google.com/dataflow)**  
-
-  **Fully managed stream and batch data processing** . **Pricing**: **per-vCPU and per-GB memory** for worker resources, plus charges for **Dataflow Shuffle** (batch) or **Streaming Engine** (streaming) . **FlexRS (Flexible Resource Scheduling)** offers **up to 40% discount** on batch jobs—**trade-off**: Google can delay execution **up to six hours** and use preemptible VMs . **Cost optimization**: **Dataflow Shuffle** offloads shuffle operations from workers, enabling **smaller machine types** and **faster job completion** . **Streaming Engine** offloads state management, reducing worker requirements . **The GCP-native choice** for unified batch and stream processing .
-
-
-
-- **[Informatica](https://www.informatica.com/)**  
-
-  **Enterprise data integration and management platform** . **Pricing**: **quote-only** with **IPU (Informatica Processing Unit)** consumption model . **IPUs are driven by "scalers"**: Secure Agent runtime, CDI-e elastic compute, data mass ingestion volume, and workload-specific metrics . **Premium connectors** (SAP, Salesforce, mainframe) can add **$25,000–$100,000 annually** . **Premium support** up to **$60,000 annually** . **PowerCenter five-year TCO** reportedly ranges **$3.6M to $15M+** for mid-to-large deployments . **Best for**: large enterprises with **complex legacy integration** and **deep regulatory compliance** needs .
 
 
 
