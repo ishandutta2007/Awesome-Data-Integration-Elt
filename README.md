@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Data-Integration-Elt/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Integration-Elt?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Integration-Elt/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Integration-Elt?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Integration-Elt/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Integration-Elt?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Integration-Elt/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -79,73 +79,73 @@ The sector demonstrates a **moderately concentrated tier at the top paired with 
 
 Curated open-source projects for self-hosted data integration, CDC replication, pipelines-as-code, and workflow scheduling. **Sorted by GitHub stargazers count (descending)**:
 
-1. **[n8n](https://github.com/n8n-io/n8n)** [![GitHub stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers)  
+1. **[n8n](https://github.com/n8n-io/n8n)** [![GitHub_Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers)  
    **Fair-code workflow automation and pipeline integration tool** (Sustainable Use License) — Visual node-based pipeline orchestrator with 400+ native integrations. Widely adopted for multi-system API orchestration, webhook listeners, ETL event triggers, and data quality alerting.
 
-2. **[Apache Airflow](https://github.com/apache/airflow)** [![GitHub stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)  
+2. **[Apache Airflow](https://github.com/apache/airflow)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers)  
    **The industry standard for programmatic workflow orchestration** (Apache-2.0) — Python-first DAG scheduler that coordinates massive extract, load, and transformation workflows across distributed compute backends and cloud warehouses.
 
-3. **[Kestra](https://github.com/kestra-io/kestra)** [![GitHub stars](https://img.shields.io/github/stars/kestra-io/kestra?style=social&color=white)](https://github.com/kestra-io/kestra/stargazers)  
+3. **[Kestra](https://github.com/kestra-io/kestra)** [![GitHub_Stars](https://img.shields.io/github/stars/kestra-io/kestra?style=social&color=white)](https://github.com/kestra-io/kestra/stargazers)  
    **Declarative, event-driven data orchestrator** (Apache-2.0) — YAML-defined, language-agnostic workflow orchestration unifying microservices, AI pipelines, and ELT jobs with built-in retry policies and real-time execution monitoring.
 
-4. **[Prefect](https://github.com/prefecthq/prefect)** [![GitHub stars](https://img.shields.io/github/stars/prefecthq/prefect?style=social&color=white)](https://github.com/prefecthq/prefect/stargazers)  
+4. **[Prefect](https://github.com/prefecthq/prefect)** [![GitHub_Stars](https://img.shields.io/github/stars/prefecthq/prefect?style=social&color=white)](https://github.com/prefecthq/prefect/stargazers)  
    **Modern Python workflow orchestration and pipeline management** (Apache-2.0) — Coordinates data pipelines with dynamic Python code, automatic retries, instant scheduling, state tracking, and cloud/hybrid execution agents.
 
-5. **[Vector](https://github.com/vectordotdev/vector)** [![GitHub stars](https://img.shields.io/github/stars/vectordotdev/vector?style=social&color=white)](https://github.com/vectordotdev/vector/stargazers)  
+5. **[Vector](https://github.com/vectordotdev/vector)** [![GitHub_Stars](https://img.shields.io/github/stars/vectordotdev/vector?style=social&color=white)](https://github.com/vectordotdev/vector/stargazers)  
    **High-performance observability and stream data pipeline engine** (MPL-2.0) — Built in Rust for ultra-low latency log and metric ingestion, transformation, and routing at enterprise scale.
 
-6. **[Airbyte OSS](https://github.com/airbytehq/airbyte)** [![GitHub stars](https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white)](https://github.com/airbytehq/airbyte/stargazers)  
+6. **[Airbyte OSS](https://github.com/airbytehq/airbyte)** [![GitHub_Stars](https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white)](https://github.com/airbytehq/airbyte/stargazers)  
    **Leading open-source data integration engine** (Elastic-2.0 for core) — Features 600+ connectors, UI/API orchestration, and a declarative Connector Development Kit (CDK) for building and maintaining custom database/API extractors.
 
-7. **[Dagster](https://github.com/dagster-io/dagster)** [![GitHub stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers)  
+7. **[Dagster](https://github.com/dagster-io/dagster)** [![GitHub_Stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers)  
    **Asset-based data orchestrator** (Apache-2.0) — Models data pipelines around data assets rather than tasks, with native awareness of software-defined assets, data lineage, partitioning, and automated sensor-driven triggers.
 
-8. **[Logstash](https://github.com/elastic/logstash)** [![GitHub stars](https://img.shields.io/github/stars/elastic/logstash?style=social&color=white)](https://github.com/elastic/logstash/stargazers)  
+8. **[Logstash](https://github.com/elastic/logstash)** [![GitHub_Stars](https://img.shields.io/github/stars/elastic/logstash?style=social&color=white)](https://github.com/elastic/logstash/stargazers)  
    **Server-side data processing pipeline engine** (SSPL/Elastic License) — Ingests data from multiple simultaneous sources, transforms it dynamically with filtering plugins, and delivers it to Elasticsearch and storage sinks.
 
-9. **[dbt-core](https://github.com/dbt-labs/dbt-core)** [![GitHub stars](https://img.shields.io/github/stars/dbt-labs/dbt-core?style=social&color=white)](https://github.com/dbt-labs/dbt-core/stargazers)  
+9. **[dbt-core](https://github.com/dbt-labs/dbt-core)** [![GitHub_Stars](https://img.shields.io/github/stars/dbt-labs/dbt-core?style=social&color=white)](https://github.com/dbt-labs/dbt-core/stargazers)  
    **The transform layer of modern ELT** (Apache-2.0) — Enables data engineers and analysts to transform data inside the warehouse using standard modular SQL, version control, automated testing, and compiled documentation.
 
-10. **[Fluentd](https://github.com/fluent/fluentd)** [![GitHub stars](https://img.shields.io/github/stars/fluent/fluentd?style=social&color=white)](https://github.com/fluent/fluentd/stargazers)  
+10. **[Fluentd](https://github.com/fluent/fluentd)** [![GitHub_Stars](https://img.shields.io/github/stars/fluent/fluentd?style=social&color=white)](https://github.com/fluent/fluentd/stargazers)  
     **Unified logging layer and event collector** (Apache-2.0 / CNCF Graduated) — Pluggable event stream collector connecting hundreds of application logging layers to warehouses, object stores, and search clusters.
 
-11. **[Debezium](https://github.com/debezium/debezium)** [![GitHub stars](https://img.shields.io/github/stars/debezium/debezium?style=social&color=white)](https://github.com/debezium/debezium/stargazers)  
+11. **[Debezium](https://github.com/debezium/debezium)** [![GitHub_Stars](https://img.shields.io/github/stars/debezium/debezium?style=social&color=white)](https://github.com/debezium/debezium/stargazers)  
     **Distributed Change Data Capture (CDC) platform** (Apache-2.0) — Streams row-level database changes from PostgreSQL, MySQL, SQL Server, and Oracle into Apache Kafka, Iceberg, and streaming sinks with millisecond latency.
 
-12. **[Apache SeaTunnel](https://github.com/apache/seatunnel)** [![GitHub stars](https://img.shields.io/github/stars/apache/seatunnel?style=social&color=white)](https://github.com/apache/seatunnel/stargazers)  
+12. **[Apache SeaTunnel](https://github.com/apache/seatunnel)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/seatunnel?style=social&color=white)](https://github.com/apache/seatunnel/stargazers)  
     **High-performance, distributed, massive data integration tool** (Apache-2.0) — Synchronizes billions of daily records across 100+ connectors with batch/stream unification, connector isolation, and zero-data-loss checkpointing.
 
-13. **[Redpanda Connect](https://github.com/redpanda-data/connect)** [![GitHub stars](https://img.shields.io/github/stars/redpanda-data/connect?style=social&color=white)](https://github.com/redpanda-data/connect/stargazers)  
+13. **[Redpanda Connect](https://github.com/redpanda-data/connect)** [![GitHub_Stars](https://img.shields.io/github/stars/redpanda-data/connect?style=social&color=white)](https://github.com/redpanda-data/connect/stargazers)  
     **High-performance stream processor and data pipeline router** (Apache-2.0, formerly Benthos) — Declarative, memory-efficient streaming engine supporting stateless data transforms, message brokers, and enterprise connectors.
 
-14. **[CloudQuery](https://github.com/cloudquery/cloudquery)** [![GitHub stars](https://img.shields.io/github/stars/cloudquery/cloudquery?style=social&color=white)](https://github.com/cloudquery/cloudquery/stargazers)  
+14. **[CloudQuery](https://github.com/cloudquery/cloudquery)** [![GitHub_Stars](https://img.shields.io/github/stars/cloudquery/cloudquery?style=social&color=white)](https://github.com/cloudquery/cloudquery/stargazers)  
     **High-performance ELT framework for cloud infrastructure and SaaS APIs** (MPL-2.0) — Extracts cloud assets, configurations, and API data into PostgreSQL, BigQuery, Snowflake, and ClickHouse for security and compliance audits.
 
-15. **[Apache Hudi](https://github.com/apache/hudi)** [![GitHub stars](https://img.shields.io/github/stars/apache/hudi?style=social&color=white)](https://github.com/apache/hudi/stargazers)  
+15. **[Apache Hudi](https://github.com/apache/hudi)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/hudi?style=social&color=white)](https://github.com/apache/hudi/stargazers)  
     **Streaming data lake platform** (Apache-2.0) — Provides table-level transactional storage with CDC ingestion, upserts, incremental queries, and compaction on cloud object storage.
 
-16. **[Apache NiFi](https://github.com/apache/nifi)** [![GitHub stars](https://img.shields.io/github/stars/apache/nifi?style=social&color=white)](https://github.com/apache/nifi/stargazers)  
+16. **[Apache NiFi](https://github.com/apache/nifi)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/nifi?style=social&color=white)](https://github.com/apache/nifi/stargazers)  
     **Flow-based visual data management and distribution platform** (Apache-2.0) — Highly configurable drag-and-drop pipeline interface with real-time bidirectional data flow control, prioritization, and complete data provenance tracking.
 
-17. **[dlt (data load tool)](https://github.com/dlt-hub/dlt)** [![GitHub stars](https://img.shields.io/github/stars/dlt-hub/dlt?style=social&color=white)](https://github.com/dlt-hub/dlt/stargazers)  
+17. **[dlt (data load tool)](https://github.com/dlt-hub/dlt)** [![GitHub_Stars](https://img.shields.io/github/stars/dlt-hub/dlt?style=social&color=white)](https://github.com/dlt-hub/dlt/stargazers)  
     **Lightweight Python library for automated data loading** (Apache-2.0) — Developer-first data pipeline library that automatically infers schemas, flattens nested JSON structures, manages migrations, and loads records directly into warehouses and vector databases.
 
-18. **[Meltano](https://github.com/meltano/meltano)** [![GitHub stars](https://img.shields.io/github/stars/meltano/meltano?style=social&color=white)](https://github.com/meltano/meltano/stargazers)  
+18. **[Meltano](https://github.com/meltano/meltano)** [![GitHub_Stars](https://img.shields.io/github/stars/meltano/meltano?style=social&color=white)](https://github.com/meltano/meltano/stargazers)  
     **Declarative, code-first DataOps and ELT framework** (MIT) — Built on the Singer open specification. Manages 600+ taps and targets as code via `meltano.yml`, bundling extractors, loaders, dbt transforms, and pipeline testing directly in version control.
 
-19. **[Apache Gobblin](https://github.com/apache/gobblin)** [![GitHub stars](https://img.shields.io/github/stars/apache/gobblin?style=social&color=white)](https://github.com/apache/gobblin/stargazers)  
+19. **[Apache Gobblin](https://github.com/apache/gobblin)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/gobblin?style=social&color=white)](https://github.com/apache/gobblin/stargazers)  
     **Distributed data integration framework** (Apache-2.0) — Enterprise ingestion engine developed by LinkedIn for streaming and batch data ecosystem integration across big data storage layers.
 
-20. **[Bruin](https://github.com/bruin-data/bruin)** [![GitHub stars](https://img.shields.io/github/stars/bruin-data/bruin?style=social&color=white)](https://github.com/bruin-data/bruin/stargazers)  
+20. **[Bruin](https://github.com/bruin-data/bruin)** [![GitHub_Stars](https://img.shields.io/github/stars/bruin-data/bruin?style=social&color=white)](https://github.com/bruin-data/bruin/stargazers)  
     **CLI-driven end-to-end data pipeline tool** (Apache-2.0) — Combines SQL and Python transformations with built-in asset dependencies, lineage graph generation, quality checks, and schema validation.
 
-21. **[Singer Specification](https://github.com/singer-io/getting-started)** [![GitHub stars](https://img.shields.io/github/stars/singer-io/getting-started?style=social&color=white)](https://github.com/singer-io/getting-started/stargazers)  
+21. **[Singer Specification](https://github.com/singer-io/getting-started)** [![GitHub_Stars](https://img.shields.io/github/stars/singer-io/getting-started?style=social&color=white)](https://github.com/singer-io/getting-started/stargazers)  
     **Open specification for modular data extractors and loaders** (Apache-2.0) — Defines UNIX-style communication between JSON-emitting taps and stdin-consuming targets; forms the architectural foundation for Meltano and Stitch.
 
-22. **[Sling CLI](https://github.com/slingdata-io/sling-cli)** [![GitHub stars](https://img.shields.io/github/stars/slingdata-io/sling-cli?style=social&color=white)](https://github.com/slingdata-io/sling-cli/stargazers)  
+22. **[Sling CLI](https://github.com/slingdata-io/sling-cli)** [![GitHub_Stars](https://img.shields.io/github/stars/slingdata-io/sling-cli?style=social&color=white)](https://github.com/slingdata-io/sling-cli/stargazers)  
     **High-speed CLI data movement tool** (MIT) — Fast database-to-database, file-to-database, and cloud storage replication engine that transfers data with minimal configuration and zero external dependencies.
 
-23. **[Conduit](https://github.com/conduitio/conduit)** [![GitHub stars](https://img.shields.io/github/stars/conduitio/conduit?style=social&color=white)](https://github.com/conduitio/conduit/stargazers)  
+23. **[Conduit](https://github.com/conduitio/conduit)** [![GitHub_Stars](https://img.shields.io/github/stars/conduitio/conduit?style=social&color=white)](https://github.com/conduitio/conduit/stargazers)  
     **Real-time data integration streaming tool written in Go** (Apache-2.0) — Lightweight, single-binary data streaming engine designed for zero-dependency local or Kubernetes-native low-latency CDC pipelines.
 
 ---
